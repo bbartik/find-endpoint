@@ -5,15 +5,16 @@
 This script attempts to find the last L2 switch and port where a MAC address is located. Along the way it displays L3 hops via traceroute and L2 hops via CDP.
 
 ## Usage:
-
+```
 python find_endpoint.py
 
 Enter IP address: 
 Enter device username: 
 Enter device password: 
+```
 
 ## Example:
-
+```
 $ sudo .venv/bin/python find_endpoint.py 
 
 Enter IP address: 172.28.128.121
@@ -37,3 +38,4 @@ Unable to gather more CDP info.
     DOWNSTREAM SWITCHES: 
          - PDX-3650-STAGING     Gi0/2
          - PDX-3850-02  Gi1/0/13
+```
