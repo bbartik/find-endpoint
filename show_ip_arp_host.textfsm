@@ -1,0 +1,11 @@
+Value Filldown IPADDRESS (\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})
+Value Filldown AGE (\d{1,4})
+Value Required,Filldown MAC (\w{4}.\w{4}.\w{4})
+Value Filldown TYPE (\w+)
+Value Filldown INTERFACE (\w+)
+
+
+Start
+  ^Protocol.*Interface -> Clear
+  ^Internet\s+${IPADDRESS}\s+${AGE}\s+${MAC}\s+${TYPE}\s+${INTERFACE} -> Record
+
